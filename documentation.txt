@@ -1,0 +1,34 @@
+
+for the selection frame ...
+just have a cursor that can go over each and every option and select them
+like a 4 x 4 grid that selects the matches
+once an object is selected, it should be crossed out or deleted from the screen view..
+
+Main Game Loop
+------------------------------------------------------------------------------------------------------
+# ie.) the main game loop will
+#      1.    be activated after the start function input is fulfilled
+#      2(a). once in the main game loop, it will bring you to a page which lets you choose the attribute values/names of the characters or automatically generate characters (default capability which will be enabled for now
+#      2(b). this will lead you to the next screen which will let you pick which characters you believe are matches
+#      (for future update: game will go through each of the matches and produce some kind of output about their interaction. ie; they had a fight, or they hooked up right away, or they cheated, or some other indication of how well they get along)
+#      (for future update: transitions will occur between different screens)
+
+#      2(c). The game will tell you how many of the matches are actually correct
+#      2(d). The game will take you to the truth booth. Pick one of your current matches to send to truth booth. The game will then tell you whether they are a perfect match or not. If they ARE a perfect match, then the game takes those players out of circulation. Ie.) you cannot choose them as a match for the next round of selection
+#      2(e). The game loop restarts
+
+Game loop dev process:
+------------------------------------------------------------------------------------------------------
+1. set all of your initial input values and overall display/window dimensions
+2. Create a method to check the events which occur while the game is running
+
+
+# cannot figure out how to implement the inputs correctly, so for now it will be just a series of default names for the characters
+
+if you send a perfect match to the truth booth, and they are a perfect match, then it will remove that perfect match from the pool. So it will only output the names of characters who are still in the pool
+
+pseudo code 
+
+for matches in perfect_matches:
+    for person in matches:
+        draw_text(person, 30, )
